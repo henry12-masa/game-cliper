@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "game-cliper",
+  "compatibility_date": "2026-06-22",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "game-clipper-mvp"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
