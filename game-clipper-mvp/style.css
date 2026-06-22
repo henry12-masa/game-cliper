@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.hero {
+  padding: 56px 20px;
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, .45), transparent 35%),
+    linear-gradient(135deg, #111827, #020617);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.hero > div,
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid rgba(96, 165, 250, .6);
+  border-radius: 999px;
+  color: #93c5fd;
+  background: rgba(37, 99, 235, .12);
+}
+
+h1 {
+  font-size: clamp(32px, 6vw, 64px);
+  line-height: 1.05;
+  margin: 16px 0;
+}
+
+.lead {
+  max-width: 680px;
+  color: #cbd5e1;
+  font-size: 18px;
+}
+
+.container {
+  padding: 24px 20px 64px;
+}
+
+.card {
+  background: rgba(15, 23, 42, .9);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 20px;
+  padding: 22px;
+  margin-top: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.22);
+}
+
+video {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  margin-top: 16px;
+  border-radius: 14px;
+  background: #020617;
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 18px;
+  border: 1px dashed rgba(255,255,255,.2);
+  border-radius: 14px;
+  background: rgba(255,255,255,.04);
+  color: #e5e7eb;
+}
+
+.grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 18px;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  color: #cbd5e1;
+}
+
+input[type="number"],
+select {
+  padding: 12px 14px;
+  color: #e5e7eb;
+  border: 1px solid rgba(255,255,255,.14);
+  background: #020617;
+  border-radius: 12px;
+}
+
+button {
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
+  color: white;
+  background: #334155;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+.primary {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  font-weight: 700;
+}
+
+.status {
+  color: #93c5fd;
+}
+
+.clips {
+  display: grid;
+  gap: 12px;
+}
+
+.clip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid rgba(255,255,255,.09);
+  background: rgba(255,255,255,.04);
+  border-radius: 16px;
+}
+
+.clip h3 {
+  margin: 0 0 6px;
+}
+
+.clip p {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.exportBtn {
+  background: #16a34a;
+}
+
+.previewBtn {
+  background: #475569;
+}
+
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clip {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
